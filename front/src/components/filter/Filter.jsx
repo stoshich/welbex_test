@@ -70,7 +70,7 @@ const Filter = ({ dataArr, sortedArr, setSortedArr, setIsFiltered, currentPage, 
             setIsFiltered(false)
             setPagesQty(Math.ceil(dataArr.length / 5))
         }
-    }, [column, sortType, inputValue, currentPage])
+    }, [column, sortType, inputValue])
 
     return (
         <div className='filter'>

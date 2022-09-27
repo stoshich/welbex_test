@@ -26,7 +26,10 @@ function App() {
 
   // Расчет кол-ва страниц при фильтрации
   useEffect(() => {
-    isFiltered && setPagesQty(Math.ceil(sortedArr.length / 5))
+    if (isFiltered) {
+      setPagesQty(Math.ceil(sortedArr.length / 5))
+      setCurrentPage(1)
+    }
   }, [sortedArr])
 
   // Расчет кол-ва страниц при получении данных
