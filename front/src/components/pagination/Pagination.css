@@ -1,0 +1,19 @@
+.pagination__block {
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 20px;
+    background-color: rgb(95, 255, 161);
+    height: 36px;
+    width: 36px;
+    margin: 0 5px;
+    border: 1px solid rgb(95, 255, 161);
+    border-radius: 5px;
+}
+
+.active {
+    background-color: rgb(255, 202, 27);
+    border: 2px solid rgb(82, 53, 0);
+}
